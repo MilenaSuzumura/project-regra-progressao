@@ -26,7 +26,7 @@ public class App {
       System.out.println("Digite a nota obtida para " + nomeAtividade + ":");
       int notaAtividade = Integer.parseInt(scanMenu.nextLine());
     }
-    }
+
     scanMenu.close();
 
   }
