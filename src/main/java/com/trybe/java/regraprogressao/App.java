@@ -16,8 +16,7 @@ public class App {
     Scanner scanMenu = new Scanner(System.in);
     short qnt = Short.parseShort(scanMenu.nextLine());
 
-    int[] arrayPeso = new int[qnt];
-    int[] arrayNota = new int[qnt];
+    int pesoTotal = 0;
 
     for (int atividade = 1; atividade <= qnt; atividade++) {
       System.out.println("Digite o nome da atividade " + atividade + ": ");
@@ -25,28 +24,18 @@ public class App {
 
       System.out.println("Digite o peso da atividade " + atividade + ": ");
       int pesoAtividade = Integer.parseInt(scanMenu.nextLine());
-      arrayPeso[atividade] = pesoAtividade;
+      pesoTotal = pesoTotal + pesoAtividade;
 
       System.out.println("Digite a nota obtida para " + nomeAtividade + ":");
       int notaAtividade = Integer.parseInt(scanMenu.nextLine());
-      arrayNota[atividade] = notaAtividade;
     }
 
-    int totalPesos = calculaPeso(arrayPeso);
-    if (totalPesos != 100) {
+    if (pesoTotal != 100) {
       System.out.println("A soma dos pesos é diferente de 100!");
       scanMenu.close();
     }
 
     scanMenu.close();
 
-  }
-
-  private static int calculaPeso(int[] allPesos) {
-    int totalPesos = 0;
-    for (int i = 0; i < allPesos.length; i++) {
-      totalPesos = totalPesos + allPesos[i];
-    }
-    return totalPesos;
   }
 }
