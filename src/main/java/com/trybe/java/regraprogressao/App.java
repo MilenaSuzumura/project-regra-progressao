@@ -32,6 +32,9 @@ public class App {
       int pesoAtividade = scanMenu.nextInt();
       arrayPeso[index] = pesoAtividade;
     }
+
+
+    scanMenu.close();
   }
 
 }
