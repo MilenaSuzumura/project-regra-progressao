@@ -40,12 +40,12 @@ public class App {
     double notaFinal = notaFinalCima / pesoTotal;
 
     if (notaFinal >= 85) {
-      System.out.print("Parabéns! Você alcançou " + notaFinal + "%!");
-      System.out.println(" E temos o prazer de informar que você obteve aprovação! ");
+      System.out.print("Parabéns! Você alcançou " + notaFinal + "%");
+      System.out.println("! E temos o prazer de informar que você obteve aprovação!");
     } else {
       System.out.print("Lamentamos informar que, ");
-      System.out.print("com base na sua pontuação alcançada neste período, " + notaFinal + "%,");
-      System.out.println("você não atingiu a pontuação mínima necessária para sua aprovação.");
+      System.out.print("com base na sua pontuação alcançada neste período, " + notaFinal + "%");
+      System.out.println(", você não atingiu a pontuação mínima necessária para sua aprovação.");
     }
 
     scanMenu.close();
