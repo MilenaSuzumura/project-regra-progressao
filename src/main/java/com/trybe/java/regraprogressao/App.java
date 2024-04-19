@@ -36,8 +36,8 @@ public class App {
       System.out.println("A soma dos pesos é diferente de 100!");
     }
 
-    int notaFinalCima = pesoTotal * notaTotal;
-    int notaFinal = notaFinalCima / pesoTotal;
+    double notaFinalCima = pesoTotal * notaTotal;
+    double notaFinal = notaFinalCima / pesoTotal;
 
     if (notaFinal >= 85) {
       System.out.print("Parabéns! Você alcançou " + notaFinal + "%!");
