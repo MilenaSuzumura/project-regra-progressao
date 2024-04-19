@@ -5,10 +5,6 @@ Projeto Regra Progressão é um projeto focada em calcular a nota final do estud
 
 <strong>OBS:</strong> ESSA ATIVIDADE FOI DESENVOLVIDA NA TRYBE.
 
-<!-- 
-
-
-
 <br>
 
 ## 📑 Informações básicas e Orientações 📑
@@ -17,68 +13,67 @@ Projeto Regra Progressão é um projeto focada em calcular a nota final do estud
   <summary><strong>⚙️ Técnologias usadas ⚙️</strong></summary><br>
 
 * Java;
-* Gradle;
-* StringUtils
+* Maven.
 </details>
 
 <details>
   <summary><strong>⌨️ Instalando Dependências ⌨️</strong></summary><br>
 
-Execute:  `gradle install`
+Execute:  `maven install`
 </details>
 
 <br>
 
-## 💁‍♀️ Informações gerais 💁‍♀️
 
-### 🧾 Aplicação 🧾
+## 📂 Informações gerais 📂
 
-1 - Rode o arquivo `Application.java`. A `Application.java` vai te pedir para `Informar o número da conta`;
+### 🧾 App 🧾
 
-2 - Após inserir o número, ele retornará o número da conta com no `máximo 6 digitos`;
+1 - Rode o arquivo `App.java`. A `App.java` vai te pedir para `Informar a quantidade de atividades e projetos avaliativos` que você vai cadastrar;
 
-3 - Caso o número tiver `menos que 6 caracters`, ele adicionará `0` para completar os números que faltam;
+2 - Após, o código pedirá o `nome dessa atividade/projeto`, `peso(quanto que a atividade/projeto vale)` e `a nota que o estudante tirou`;
+
+3 - O código avaliará `se a quantidade o peso total de todas as atividades é igual a 100`. Caso não atinja essa quantidade, a seguinte mensagem aparecerá: `A soma dos pesos é diferente de 100!`
 
 <strong>Exemplo:</strong>
 ````
-Informe o número da conta:
+Digite a quantidade de atividades para cadastrar: 
 1
-Número da conta: 000001
+Digite o nome da atividade 1: 
+Atividade1
+Digite o peso da atividade 1: 
+40
+Digite a nota obtida para Atividade1:
+30
+A soma dos pesos é diferente de 100!
 ````
 
-4 - Caso o número tiver `mais de 6 caracters`, o código `tirará os números na frente` para obter `apenas 6 caracters`;
+4 - Após, o código `calculará o valor da nota final`. A nota final é `(peso1 * nota1)+(peso2 * nota2)+...+(pesoN * notaN)/peso1+peso2+...+pesoN`.
 
-<strong>Exemplo:</strong>
+5 - Caso a `nota final` do estudante for `igual ou superior à 85%`, `ele será aprovado`. Mas, se `a nota final for menor que 85%, ele será reprovado`.
+
+<strong>Exemplo caso o estudante for aprovado:</strong>
 ````
-Informe o número da conta:
-123456789
-Número da conta: 456789
+Digite a quantidade de atividades para cadastrar: 
+1
+Digite o nome da atividade 1: 
+Atividade1
+Digite o peso da atividade 1: 
+100
+Digite a nota obtida para Atividade1:
+85
+Parabéns! Você alcançou 85.0%! E temos o prazer de informar que você obteve aprovação!
 ````
 
-5 - Caso tiver `a quantidade correta`, o código devolverá do jeito que está.
-
-<strong>Exemplo:</strong>
+<strong>Exemplo caso o estudante for reprovado:</strong>
 ````
-Informe o número da conta:
-123456
-Número da conta: 123456
+Digite a quantidade de atividades para cadastrar: 
+1
+Digite o nome da atividade 1: 
+Atividade1
+Digite o peso da atividade 1: 
+100
+Digite a nota obtida para Atividade1:
+60
+Lamentamos informar que, com base na sua pontuação alcançada neste período, 60.0%, você não atingiu a pontuação mínima necessária para sua aprovação.
 ````
-
-6 - E se o usuário mandar algo que `não for um número`, ele retornará uma mensagem de erro.
-
-<strong>Exemplo:</strong>
-````
-Informe o número da conta:
-abelha
-Número da conta inválido!
-
-````
--->
-
-<!--
-a. Cadastrar atividades avaliativas para o período, seja exercícios ou projetos. Assim, você terá um controle completo sobre suas tarefas e metas.
-
-b. Inserir as notas dos exercícios e projetos cadastrados para o período. O programa calculará automaticamente o percentual alcançado, revelando seu desempenho de forma nítida e objetiva.
-
-c. Com base no percentual alcançado, você descobrirá se foi aprovado ou reprovado. A mágica acontece quando você supera o limite de 85%. É a sua passagem para o próximo período, uma conquista a ser comemorada!
--->
