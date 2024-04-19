@@ -11,10 +11,9 @@ public class App {
    * Metodo main.
    */
   public static void main(String[] args) {
-    Scanner scanMenu = new Scanner(System.in);
-
-
     System.out.println("Digite a quantidade de atividades para cadastrar: ");
+
+    Scanner scanMenu = new Scanner(System.in);
     short qnt = Short.parseShort(scanMenu.nextLine());
 
     for (int atividade = 1; atividade <= qnt; atividade++) {
