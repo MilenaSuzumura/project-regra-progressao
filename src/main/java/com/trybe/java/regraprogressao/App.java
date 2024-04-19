@@ -44,12 +44,8 @@ public class App {
       System.out.println("A soma dos pesos é diferente de 100!");
     }
   }
-  /**
-   * Soma o peso
-   *
-   * @param allPesos array de números com os valores dos pesos
-   */
-  public static int calculaPeso (int[] allPesos) {
+
+  private static int calculaPeso(int[] allPesos) {
     int totalPesos = 0;
     for (int i = 0; i < allPesos.length; i++) {
       totalPesos = totalPesos + allPesos[i];
