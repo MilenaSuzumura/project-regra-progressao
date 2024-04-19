@@ -41,7 +41,7 @@ public class App {
 
     if (notaFinal >= 85) {
       System.out.print("Parabéns! Você alcançou " + notaFinal + "%!");
-      System.out.println(" E temos o prazer de informar que você obteve aprovação! ");
+      System.out.println(" E temos o prazer de informar que você obteve aprovação!");
     } else {
       System.out.print("Lamentamos informar que,");
       System.out.print("com base na sua pontuação alcançada neste período, " + notaFinal + "%,");
