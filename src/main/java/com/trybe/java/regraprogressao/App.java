@@ -17,7 +17,7 @@ public class App {
     short qnt = Short.parseShort(scanMenu.nextLine());
 
     int pesoTotal = 0;
-    int notaTotal = 0;
+    double notaFinalCima = 0;
 
     for (int atividade = 1; atividade <= qnt; atividade++) {
       System.out.println("Digite o nome da atividade " + atividade + ": ");
@@ -29,14 +29,14 @@ public class App {
 
       System.out.println("Digite a nota obtida para " + nomeAtividade + ":");
       int notaAtividade = Integer.parseInt(scanMenu.nextLine());
-      notaTotal = notaTotal + notaAtividade;
+      double calculoVezes = pesoAtividade * notaAtividade;
+      notaFinalCima = notaFinalCima + calculoVezes;
     }
 
     if (pesoTotal != 100) {
       System.out.println("A soma dos pesos é diferente de 100!");
     }
 
-    double notaFinalCima = pesoTotal * notaTotal;
     double notaFinal = notaFinalCima / pesoTotal;
 
     if (notaFinal >= 85) {
