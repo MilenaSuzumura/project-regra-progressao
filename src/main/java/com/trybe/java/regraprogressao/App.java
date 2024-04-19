@@ -12,12 +12,15 @@ public class App {
    */
   public static void main(String[] args) {
     Scanner scanMenu = new Scanner(System.in);
-    String[] arrayNomeAtividades = new String [20];
-    int[] arrayPesoAtividade = new int[20];
 
     System.out.println("Digite a quantidade de atividades para cadastrar:");
 
     short qntAtividade = scanMenu.nextShort();
+
+    String[] arrayNomeAtividades = new String [qntAtividade];
+    int[] arrayPesoAtividade = new int[qntAtividade];
+    int[] arrayNotaAtividade = new int[qntAtividade];
+
 
     for (int atividade = 1; atividade <= qntAtividade; atividade++) {
       System.out.println("Digite o nome da atividade " + atividade + ":");
@@ -30,6 +33,25 @@ public class App {
 
       int pesoAtividade = scanMenu.nextInt();
       arrayPesoAtividade[index] = pesoAtividade;
+
+      System.out.println("Digite a nota obtida para " + nomeAtividade + ":");
+      int notaAtividade = scanMenu.nextInt();
+      arrayNotaAtividade[index] = notaAtividade;
+    }
+
+    int totalPesos = CalculaPeso(arrayPesoAtividade);
+    if (totalPesos != 100) {
+      System.out.println("A soma dos pesos é diferente de 100!");
     }
   }
+
+  public static int CalculaPeso (int[] allPesos) {
+    int totalPesos = 0;
+    for (int i = 0; i < allPesos.length; i++) {
+      totalPesos = totalPesos + allPesos[i];
+    }
+
+    return totalPesos;
+  }
+
 }
