@@ -18,10 +18,10 @@ public class App {
 
     for (int atividade = 1; atividade <= qnt; atividade++) {
       System.out.println("Digite o nome da atividade " + atividade + ": ");
-        String nomeAtividade = scanMenu.nextLine();
+      String nomeAtividade = scanMenu.nextLine();
 
-        System.out.println("Digite o peso da atividade " + atividade + ": ");
-        int pesoAtividade = Integer.parseInt(scanMenu.nextLine());
+      System.out.println("Digite o peso da atividade " + atividade + ": ");
+      int pesoAtividade = Integer.parseInt(scanMenu.nextLine());
     }
     scanMenu.close();
 
