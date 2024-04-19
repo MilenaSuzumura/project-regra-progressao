@@ -39,13 +39,17 @@ public class App {
       arrayNotaAtividade[index] = notaAtividade;
     }
 
-    int totalPesos = CalculaPeso(arrayPesoAtividade);
+    int totalPesos = calculaPeso(arrayPesoAtividade);
     if (totalPesos != 100) {
       System.out.println("A soma dos pesos é diferente de 100!");
     }
   }
-
-  public static int CalculaPeso (int[] allPesos) {
+  /**
+   * Soma o peso
+   *
+   * @param allPesos array de números com os valores dos pesos
+   */
+  public static int calculaPeso (int[] allPesos) {
     int totalPesos = 0;
     for (int i = 0; i < allPesos.length; i++) {
       totalPesos = totalPesos + allPesos[i];
