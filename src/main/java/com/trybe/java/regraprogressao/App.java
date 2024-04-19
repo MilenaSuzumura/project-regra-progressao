@@ -13,28 +13,28 @@ public class App {
   public static void main(String[] args) {
     Scanner scanMenu = new Scanner(System.in);
 
-    System.out.println("Digite a quantidade de atividades para cadastrar: ");
 
+    System.out.println("Digite a quantidade de atividades para cadastrar: ");
     short qnt = scanMenu.nextShort();
 
-    String[] arrayNome = new String [qnt -1];
-    int[] arrayPeso = new int[qnt - 1];
+    try {
+      String[] arrayNome = new String [qnt];
+      int[] arrayPeso = new int[qnt];
 
-    for (int atividade = 1; atividade <= qnt; atividade++) {
-      System.out.println("Digite o nome da atividade " + atividade + ": ");
+      for (int atividade = 1; atividade <= qnt; atividade++) {
+        System.out.println("Digite o nome da atividade " + atividade + ": ");
 
-      int index = atividade - 1;
-      String nomeAtividade = scanMenu.next();
-      arrayNome[index] = nomeAtividade;
-
-      System.out.println("Digite o peso da atividade " + atividade + ": ");
-
-      int pesoAtividade = scanMenu.nextInt();
-      arrayPeso[index] = pesoAtividade;
+        int index = atividade - 1;
+        String nomeAtividade = scanMenu.next();
+        arrayNome[index] = nomeAtividade;
+        System.out.println("Digite o peso da atividade " + atividade + ": ");
+        int pesoAtividade = scanMenu.nextInt();
+        arrayPeso[index] = pesoAtividade;
+      }
+    } catch (Exception e) {
+      System.out.println(e);
     }
 
-
-    scanMenu.close();
   }
 
 }
