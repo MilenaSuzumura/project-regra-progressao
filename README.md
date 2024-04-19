@@ -1,9 +1,13 @@
-<!-- 
-# 🏦 Conta Bancaria Gradle 🏦
+# 🏫 Projeto Regra Progressão 🏫
 
-Conta Bancaria Gradle é uma atividade focada em praticar a ferramenta Gradle e na utilização da dependência StringUtils para o acesso a conta bancaria.
+Projeto Regra Progressão é um projeto focada em calcular a nota final do estudante para verificar se o estudante foi aprovado ou reprovado utilizando Java.
+
 
 <strong>OBS:</strong> ESSA ATIVIDADE FOI DESENVOLVIDA NA TRYBE.
+
+<!-- 
+
+
 
 <br>
 
@@ -69,4 +73,12 @@ abelha
 Número da conta inválido!
 
 ````
+-->
+
+<!--
+a. Cadastrar atividades avaliativas para o período, seja exercícios ou projetos. Assim, você terá um controle completo sobre suas tarefas e metas.
+
+b. Inserir as notas dos exercícios e projetos cadastrados para o período. O programa calculará automaticamente o percentual alcançado, revelando seu desempenho de forma nítida e objetiva.
+
+c. Com base no percentual alcançado, você descobrirá se foi aprovado ou reprovado. A mágica acontece quando você supera o limite de 85%. É a sua passagem para o próximo período, uma conquista a ser comemorada!
 -->
