@@ -45,7 +45,7 @@ public class App {
     } else {
       System.out.print("Lamentamos informar que,");
       System.out.print("com base na sua pontuação alcançada neste período, " + notaFinal + "%,");
-      System.out.println(" você não atingiu a pontuação mínima necessária para sua aprovação.");
+      System.out.println("você não atingiu a pontuação mínima necessária para sua aprovação.");
     }
 
     scanMenu.close();
