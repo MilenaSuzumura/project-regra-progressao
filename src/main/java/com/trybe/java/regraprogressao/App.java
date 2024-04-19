@@ -15,25 +15,16 @@ public class App {
 
 
     System.out.println("Digite a quantidade de atividades para cadastrar: ");
-    short qnt = scanMenu.nextShort();
+    short qnt = Short.parseShort(scanMenu.nextLine());
 
-    try {
-      String[] arrayNome = new String [qnt];
-      int[] arrayPeso = new int[qnt];
+    for (int atividade = 1; atividade <= qnt; atividade++) {
+      System.out.println("Digite o nome da atividade " + atividade + ": ");
+        String nomeAtividade = scanMenu.nextLine();
 
-      for (int atividade = 1; atividade <= qnt; atividade++) {
-        System.out.println("Digite o nome da atividade " + atividade + ": ");
-
-        int index = atividade - 1;
-        String nomeAtividade = scanMenu.next();
-        arrayNome[index] = nomeAtividade;
         System.out.println("Digite o peso da atividade " + atividade + ": ");
-        int pesoAtividade = scanMenu.nextInt();
-        arrayPeso[index] = pesoAtividade;
-      }
-    } catch (Exception e) {
-      System.out.println(e);
+        int pesoAtividade = Integer.parseInt(scanMenu.nextLine());
     }
+    scanMenu.close();
 
   }
 
