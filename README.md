@@ -1,6 +1,6 @@
-# 🏫 Projeto Regra Progressão 🏫
+# 🏫 Regra Progressão 🏫
 
-Projeto Regra Progressão é um projeto focada em calcular a nota final do estudante para verificar se o estudante foi aprovado ou reprovado utilizando Java.
+Regra Progressão é um projeto focada em calcular a nota final do estudante para verificar se o estudante foi aprovado ou reprovado utilizando Java.
 
 
 <strong>OBS:</strong> ESSA ATIVIDADE FOI DESENVOLVIDA NA TRYBE.
